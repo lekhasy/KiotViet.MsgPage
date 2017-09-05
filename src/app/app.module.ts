@@ -39,12 +39,12 @@ import {
   MdTooltipModule
 } from '@angular/material';
 
-import { ApprouteModule } from './modules/approute/approute.module';
+import { ApprouteModule } from './approute/approute.module';
 import { RouterModule } from '@angular/router';
 
-import { MessengerModule } from './modules/messenger/messenger.module';
+import { MessengerModule } from './messenger/messenger.module';
 
-import { UserPreferencesModule } from './modules/user-preferences/user-preferences.module';
+import { UserPreferencesModule } from './user-preferences/user-preferences.module';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
