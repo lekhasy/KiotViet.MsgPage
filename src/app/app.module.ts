@@ -39,8 +39,7 @@ import {
   MdTooltipModule
 } from '@angular/material';
 
-import { ApprouteModule } from './approute/approute.module';
-import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
 
 import { MessengerModule } from './messenger/messenger.module';
 
@@ -89,7 +88,7 @@ export class MaterialModule { }
     AppComponent
   ],
   imports: [
-    RouterModule.forRoot(ApprouteModule.GetAppRoute(), { enableTracing: true }),
+    AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
