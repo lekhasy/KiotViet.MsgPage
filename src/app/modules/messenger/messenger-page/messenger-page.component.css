@@ -1,0 +1,7 @@
+/* Mobile first */
+app-message-panel {
+    display: none;
+}
+app-people-list {
+    flex: 1;
+}

@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-container.flex-horizontal{
+    flex-direction: row;
+}
+
+.flex-container.flex-vertical{
+    flex-direction: column;
+}
+
+.flex-container.flex-stretch-item{
+    align-items: stretch;
+}
+
+.flex-container > .flex-1{
+    flex: 1;
+}
+
+.reverse{
+    display: rtl;
+}
+
+.full-height-page{
+    height: 100vh;
+}
+
+.full-height-parent{
+    height:  100%;
+}
+
+.auto-overflow{
+    overflow: auto;
+}
