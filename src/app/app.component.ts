@@ -11,6 +11,6 @@ export class AppComponent {
    *
    */
   constructor() {
-    console.log("component");
+    console.log('component');
   }
 }

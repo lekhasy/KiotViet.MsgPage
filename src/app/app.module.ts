@@ -6,22 +6,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { MessengerModule } from './messenger/messenger.module';
 import { UserPreferencesModule } from './user-preferences/user-preferences.module';
 import { CoreModule } from './core/core.module';
+import { NgMaterialModule } from './core/ng-material/ng-material.module';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    AppRoutingModule,
     BrowserModule,
+    NgMaterialModule,
+    CoreModule,
+    AppRoutingModule,
     MessengerModule,
     UserPreferencesModule,
-    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  constructor() {
-  }
 }

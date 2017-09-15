@@ -4,14 +4,15 @@ import { PeopleListComponent } from './people-list/people-list.component';
 import { MessagePanelComponent } from './message-panel/message-panel.component';
 import { MessengerPageComponent } from './messenger-page/messenger-page.component';
 
-import { MdListModule } from '@angular/material';
 import { PeopleItemComponent } from './people-item/people-item.component';
+import { MessageService } from './message.service';
+import { NgMaterialModule } from '../core/ng-material/ng-material.module';
 
 @NgModule({
   imports: [
-    CommonModule,
-    MdListModule
+    CommonModule
   ],
-  declarations: [PeopleListComponent, MessagePanelComponent, MessengerPageComponent, PeopleItemComponent]
+  declarations: [PeopleListComponent, MessagePanelComponent, MessengerPageComponent, PeopleItemComponent],
+  providers: [MessageService]
 })
 export class MessengerModule { }
